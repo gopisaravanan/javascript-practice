@@ -101,3 +101,18 @@ Array.prototype.myMap = function (cb) {
 }
 
 console.log(arr.myMap(val => val * 2))
+
+// 9.Filter polyfill
+// const arr = [1,2,3,4]
+
+Array.prototype.myFilter = function (cb) {
+    const result = [];
+    for(let i =0; i < this.length; i++){
+        if(cb(this[i], this, i)){
+            result.push(this[i])
+        }
+    }
+    return result;
+}
+
+console.log(arr.myFilter((val) => val > 2))
