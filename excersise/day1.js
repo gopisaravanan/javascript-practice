@@ -136,3 +136,23 @@ Array.prototype.myReduce = function (cb, initialVal) {
 }
 
 console.log(arr.myReduce((acc, curr) => acc * curr))
+
+// bubble sort
+// const arr =[2,8,6,3,5]
+
+const bubbleSort = (arr) => {
+    for(let i = 0; i < arr.length; i++){
+        for(let j =0; j < arr.length; j++){
+            if(arr[i] < arr[j]){
+                console.log(arr[i], arr[j])
+                let temp = arr[i];
+                arr[i] = arr[j]
+                arr[j] = temp
+            }
+        }
+    }
+    return arr;
+}
+
+
+console.log(bubbleSort(arr))
