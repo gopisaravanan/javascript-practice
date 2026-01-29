@@ -73,3 +73,17 @@ const firstNonRepeatingChar = (txt) => {
 };
 
 console.log(firstNonRepeatingChar(txt));
+
+// 7. Closure - count
+const createCounter = () => {
+    let count =0;
+    
+    return () => {
+        count++
+        return count
+    }
+}
+
+const innerFunc = createCounter()
+console.log(innerFunc())
+console.log(innerFunc())
