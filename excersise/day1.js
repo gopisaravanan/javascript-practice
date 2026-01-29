@@ -116,3 +116,23 @@ Array.prototype.myFilter = function (cb) {
 }
 
 console.log(arr.myFilter((val) => val > 2))
+
+// Reduce - polyfill
+// const arr = [1,2,3,4]
+
+Array.prototype.myReduce = function (cb, initialVal) {
+    let acc = initialVal;
+    let startIndex = 0;
+    
+    if(initialVal === undefined) {
+        acc = this[0];
+        startIndex = 1
+    }
+    
+    for(let i = 0; i < this.length; i++){
+        acc = cb(acc,this[i],this)
+    }
+    return acc;
+}
+
+console.log(arr.myReduce((acc, curr) => acc * curr))
