@@ -4,3 +4,8 @@
 4.Flatten an Array
 5.Flatten an Array
 6.First Non-Repeating Character
+7.closure
+8.map-polyfill
+9.filter polyfill
+10.reduce polyfill
+11.bubble sort

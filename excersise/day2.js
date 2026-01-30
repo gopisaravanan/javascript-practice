@@ -11,3 +11,16 @@ const reverseStr = (str) => {
 }
 
 console.log(reverseStr(str))
+
+// char freqency
+// const str = "javascript";
+
+const charFreq = (str) => {
+    const map = {};
+    for(let ch of str) {
+        map[ch] = (map[ch] || 0) + 1
+    }
+    return map;
+}
+
+console.log(charFreq(str))
