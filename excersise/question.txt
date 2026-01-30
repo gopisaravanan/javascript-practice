@@ -2,7 +2,7 @@
 2.check palindrome
 3.Count Character Occurrences (Frequency Count)
 4.Flatten an Array
-5.Flatten an Array
+5.Remove Duplicates
 6.First Non-Repeating Character
 7.closure
 8.map-polyfill
