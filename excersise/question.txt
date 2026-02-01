@@ -9,3 +9,6 @@
 9.filter polyfill
 10.reduce polyfill
 11.bubble sort
+12. two sum
+13. find max value
+14. find second max value
