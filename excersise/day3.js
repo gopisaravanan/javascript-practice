@@ -13,3 +13,20 @@ const twoSum = (arr, target) => {
 }
 
 console.log(twoSum(arr, target))
+
+// Find max val
+
+// const arr = [2,3, 24 ,5,6,7, 12,13]
+
+const findMaxVal = (arr) => {
+    let maxVal = arr[0];
+    for (let i = 1; i < arr.length; i++){
+        if(arr[i] > maxVal){
+            maxVal = arr[i]
+        }
+    }
+    return maxVal
+    
+}
+
+console.log(findMaxVal(arr))
