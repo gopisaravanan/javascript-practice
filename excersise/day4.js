@@ -23,3 +23,24 @@ const checkPalindrome = (text) => {
 }
 
 console.log(checkPalindrome(text))
+
+// check freq
+// const str = 'javascript';
+
+const checkfreq = (str) => {
+    const map ={};
+    for(let ch of str) {
+        map[ch] = (map[ch] || 0 ) + 1
+    }
+    return map;
+    
+}
+
+console.log(checkfreq(str))
+
+
+// Flattern Array
+const arr = [2,4,6,[3,7,[9,8]]]
+
+console.log(arr.flat())
+console.log(arr.flat(Infinity))
