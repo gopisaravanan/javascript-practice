@@ -56,7 +56,7 @@ console.log(array.flat());
 console.log(array.flat(Infinity));
 
 //6. First Non-Repeating Character
-const txt = "aabbccdd";
+const txt = "aabbccd";
 
 const firstNonRepeatingChar = (txt) => {
   const count = {};

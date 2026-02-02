@@ -63,3 +63,25 @@ const removeDuplicates = (arr) => {
 }
 
 console.log(removeDuplicates(arr))
+
+// Non repeating
+const txt = "aabbccd";
+
+
+const firstNonRepeating = (txt) => {
+    // 1st find freq
+    const map = {};
+    for(let ch of txt) {
+        map[ch] = (map[ch] || 0) + 1
+    }
+    
+    for(let ch of txt){
+        if(map[ch] === 1 ){
+            return ch;
+        }
+    }
+    
+    return null
+}
+
+console.log(firstNonRepeating(txt))
