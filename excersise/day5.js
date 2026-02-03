@@ -26,3 +26,24 @@ Array.prototype.myMap = function (cb){
 }
 
 console.log(arr.myMap(val => val * 2))
+
+// bubblesort
+
+// const arr = [5,3,7,2,9,1]
+
+const bubbleSort = (arr) => {
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0; j < arr.length; j++){
+            if(arr[i] < arr[j]){
+                let temp = arr[i];
+                arr[i]=arr[j]
+                arr[j]=temp
+            }
+        }
+    }
+        return arr;
+    
+}
+
+
+console.log(bubbleSort(arr))
