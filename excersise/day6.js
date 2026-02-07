@@ -12,7 +12,17 @@ const removeDuplicate = (mergedArr) => {
         }
     }
     return result;
-    
+
 }
 
 console.log(removeDuplicate(mergedArr))
+
+const str = 'madam';
+
+const checkPalindrome = (str) => {
+    const text = str.split('').reverse().join('');
+    return text === str;
+    
+}
+
+console.log(checkPalindrome(str))

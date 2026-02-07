@@ -1,5 +1,5 @@
 1.reverse a string
-2.check palindrome
+2.check palindrome 
 3.Count Character Occurrences (Frequency Count)
 4.Flatten an Array
 5.Remove Duplicates
