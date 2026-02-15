@@ -48,3 +48,14 @@ const freq = (str)=> {
 
 console.log(freq(str))
 
+// 2nd max
+const arr = [5, 3, 9, 7, 9] 
+
+const secondMax = (arr) => {
+    const unique = [...new Set(arr)]
+    unique.sort((a,b) => b-a)
+    return unique[1] || null
+    
+}
+
+console.log(secondMax(arr))
