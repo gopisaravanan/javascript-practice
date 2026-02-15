@@ -59,3 +59,20 @@ const secondMax = (arr) => {
 }
 
 console.log(secondMax(arr))
+
+// findMax val
+
+// const arr = [5, 3, 9, 7, 10] 
+
+const findMaxVal = (arr) => {
+    let maxVal = arr[0]
+    
+    for(let i =1; i < arr.length; i++ ){
+        if(arr[i] > maxVal){
+            maxVal = arr[i]
+        }
+    }
+    return maxVal
+}
+
+console.log(findMaxVal(arr))
