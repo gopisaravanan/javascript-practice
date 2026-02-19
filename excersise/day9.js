@@ -53,3 +53,22 @@ const maxFreqChar = (str) => {
 };
 
 console.log(maxFreqChar(str));
+
+// destructure
+
+const user = {
+"age": 10,
+"name": "Gopi"
+}
+
+const {name, age} = user
+
+console.log(age, name)
+
+
+// destructure array
+const user1 = ['Gopi', "saravanan"]
+
+const [x, y] = user1
+
+console.log(x, y)
