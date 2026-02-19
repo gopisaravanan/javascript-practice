@@ -24,3 +24,23 @@ const binarySearch = (arr, target) => {
 }
 
 console.log(binarySearch(arr, target))
+
+// removeDuplicates
+
+// const arr = [1, 2, 2, 3, 4,5,4,4,2];
+
+
+const removeDuplicates = (arr) => {
+    const result = [];
+    for(let i= 0; i < arr.length; i++){
+        if(!result.includes(arr[i])){
+            result.push(arr[i])
+        }
+    }
+    
+    return result;
+    
+    
+}
+
+console.log(removeDuplicates(arr))
