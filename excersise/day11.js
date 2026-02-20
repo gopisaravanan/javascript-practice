@@ -73,3 +73,15 @@ const bubbleSort = (arr) => {
 }
 
 console.log(bubbleSort(arr))
+
+// palindrome 
+
+// const str = 'madam';
+
+const checkPalindrome = (str) => {
+    let text = str.split('').reverse().join('')
+    return text === str
+
+}
+
+console.log(checkPalindrome(str))
