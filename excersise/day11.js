@@ -35,3 +35,21 @@ const reverseStr = (str) => {
 }
 
 console.log(reverseStr(str));
+
+
+// remove duplicates
+
+// const str = 'abcabcbb'
+
+const removeDuplicate = (str) => {
+    let result = [];
+    for (let i = 0; i < str.length; i++){
+        if(!result.includes(str[i])){
+            result.push(str[i])
+        }
+    }
+    return result.join('');
+}
+
+
+console.log(removeDuplicate(str))
