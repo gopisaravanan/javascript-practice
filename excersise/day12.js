@@ -50,3 +50,18 @@ Array.prototype.myForEach = function(cb){
 arr.myForEach((val) => {
     console.log(val * 2)
 })
+
+// closure
+
+const outer = function () {
+    let count = 0;
+    return function (){
+        count ++
+        return count;
+    }
+}
+
+const inner = outer();
+console.log(inner())
+console.log(inner())
+
