@@ -20,3 +20,4 @@ const binarySearch = (arr, target) => {
 }
 
 console.log(binarySearch(arr, target))
+
