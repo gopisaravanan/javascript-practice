@@ -65,3 +65,23 @@ const inner = outer();
 console.log(inner())
 console.log(inner())
 
+// find missing numbers
+
+const arr = [1,4,6,3,7]
+
+const findMissingNumbers = (arr) => {
+    let max = Math.max(...arr);
+    let set = new Set(arr);
+    let missing = [];
+
+    for (let i = 1; i <= max; i++) {
+        if (!set.has(i)) {
+            missing.push(i);
+        }
+    }
+
+    return missing;
+}
+
+
+console.log(findMissingNumbers(arr))
