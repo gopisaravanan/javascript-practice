@@ -36,3 +36,17 @@ Array.prototype.myMap = function(cb){
 }
 
 console.log(arr.myMap(val => val * 2))
+
+// forEach polyfill
+
+const arr = [1,2,3,4];
+
+Array.prototype.myForEach = function(cb){
+    for(let i =0; i< this.length; i++){
+        cb(this[i], i, this)
+    }
+}
+
+arr.myForEach((val) => {
+    console.log(val * 2)
+})
