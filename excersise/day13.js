@@ -33,3 +33,23 @@ const findMax = (arr1) => {
 }
 
 console.log(findMax(arr1))
+
+// two sum 
+// const arr = [2,4,6,7,8,3]
+const target = 6;
+
+const twoSum = (arr, target) => {
+   const map = new Map();
+   
+   for(let i =0; i< arr.length; i++){
+       let diff = target - arr[i]
+       if(map.has(diff)){
+           return [map.get(diff), i]
+       }
+       map.set(arr[i], i)
+   }
+    
+}
+
+console.log(twoSum(arr, target))
+
