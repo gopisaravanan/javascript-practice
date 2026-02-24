@@ -76,3 +76,26 @@ const binarySearch = (arr, target) => {
 }
 
 console.log(binarySearch(arr, target))
+
+// char freq max 
+
+const str = 'jjjjjjjjjjjavascript';
+
+const freq = (str) => {
+    let map = {};
+    
+    for(let ch of str){
+        map[ch] = (map[ch] || 0) + 1
+        
+    }
+    
+    const max = Math.max(...Object.values(map))
+    for(let ch of str){
+        if(map[ch] === max){
+            return [ch, max]
+        }
+    }
+    
+}
+
+console.log(freq(str))ß
