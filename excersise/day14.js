@@ -14,4 +14,27 @@ const bubbleSort = (arr) => {
     
 }
 
-console.log(bubbleSort(arr))
+console.log(bubbleSort(arr));
+
+
+const arr1 = [ 1, 3, 4, 5, 6, 9 ]
+const target = 6;
+const binarySearch = (arr1, target) => {
+    let left = 0;
+    let right = arr1.length -1;
+    
+    while(left <= right){
+        let mid = Math.floor((left + right) / 2)
+        if(arr1[mid] === target){
+            return mid
+        } else if(arr1[mid] <= target){
+            left = mid + 1
+        }else {
+            right = mid -1
+        }
+        
+    }
+    
+}
+
+console.log(binarySearch(arr1, target))
