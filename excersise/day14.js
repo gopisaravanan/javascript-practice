@@ -58,3 +58,20 @@ const removeDuplicates = (arr) => {
 }
 
 console.log(removeDuplicates(arr))
+
+// const arr = [1,2,3,4];
+
+// arr.forEach((val) => {
+//     console.log(val * 2)
+// })
+
+Array.prototype.myForEach = function (cb) {
+    for(let i = 0; i < arr.length; i++){
+        cb(this[i], i, this)
+    }
+}
+
+
+arr.myForEach((val) => {
+    console.log(val * 2)
+})
