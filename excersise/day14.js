@@ -75,3 +75,16 @@ Array.prototype.myForEach = function (cb) {
 arr.myForEach((val) => {
     console.log(val * 2)
 })
+
+const txt = 'javascript';
+
+const charFreq = (txt) =>{
+    const map = {};
+    
+    for(let ch of txt){
+        map[ch] = (map[ch] || 0) + 1
+    }
+    return map;
+}
+
+console.log(charFreq(txt))
